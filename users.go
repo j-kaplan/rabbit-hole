@@ -9,7 +9,8 @@ type UserInfo struct {
 	Name         string `json:"name"`
 	PasswordHash string `json:"password_hash"`
 	// Tags control permissions. Built-in tags: administrator, management, policymaker.
-	Tags string `json:"tags"`
+	Tags             string `json:"tags"`
+	HashingAlgorithm string `json:"hashing_algorithm"`
 }
 
 // Settings used to create users. Tags must be comma-separated.
